@@ -10,16 +10,40 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var animationPickerView: UIPickerView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        animationPickerView.dataSource = self
+        animationPickerView.delegate = self
+        
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
 
 }
 
+// MARK: - UIPickerViewDataSource
+extension ViewController: UIPickerViewDataSource {
+    
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return AnimationPrinciples.animations.count
+    }
+    
+    
+}
+
+// MARK: - UIPickerViewDelegate
+extension ViewController: UIPickerViewDelegate {
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return AnimationPrinciples.animations[row].name
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        // TODO: execute corresponding action
+    }
+}

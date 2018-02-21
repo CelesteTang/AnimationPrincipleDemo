@@ -12,6 +12,8 @@
 		438FDFE4203DA5C900F8D1EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 438FDFE2203DA5C900F8D1EF /* Main.storyboard */; };
 		438FDFE6203DA5C900F8D1EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 438FDFE5203DA5C900F8D1EF /* Assets.xcassets */; };
 		438FDFE9203DA5C900F8D1EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 438FDFE7203DA5C900F8D1EF /* LaunchScreen.storyboard */; };
+		438FDFF1203DAA9600F8D1EF /* AnimationPrinciples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438FDFF0203DAA9600F8D1EF /* AnimationPrinciples.swift */; };
+		438FDFF3203DAE6300F8D1EF /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438FDFF2203DAE6300F8D1EF /* Animation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		438FDFE5203DA5C900F8D1EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		438FDFE8203DA5C900F8D1EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		438FDFEA203DA5C900F8D1EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		438FDFF0203DAA9600F8D1EF /* AnimationPrinciples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationPrinciples.swift; sourceTree = "<group>"; };
+		438FDFF2203DAE6300F8D1EF /* Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,8 @@
 			children = (
 				438FDFDE203DA5C900F8D1EF /* AppDelegate.swift */,
 				438FDFE0203DA5C900F8D1EF /* ViewController.swift */,
+				438FDFF0203DAA9600F8D1EF /* AnimationPrinciples.swift */,
+				438FDFF2203DAE6300F8D1EF /* Animation.swift */,
 				438FDFE2203DA5C900F8D1EF /* Main.storyboard */,
 				438FDFE5203DA5C900F8D1EF /* Assets.xcassets */,
 				438FDFE7203DA5C900F8D1EF /* LaunchScreen.storyboard */,
@@ -137,6 +143,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				438FDFE1203DA5C900F8D1EF /* ViewController.swift in Sources */,
+				438FDFF1203DAA9600F8D1EF /* AnimationPrinciples.swift in Sources */,
+				438FDFF3203DAE6300F8D1EF /* Animation.swift in Sources */,
 				438FDFDF203DA5C900F8D1EF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,7 +283,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = V35V7R5VNP;
+				DEVELOPMENT_TEAM = ABW6V45P3T;
 				INFOPLIST_FILE = AnimationPrincipleDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hsinyutang.AnimationPrincipleDemo;
@@ -290,7 +298,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = V35V7R5VNP;
+				DEVELOPMENT_TEAM = ABW6V45P3T;
 				INFOPLIST_FILE = AnimationPrincipleDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hsinyutang.AnimationPrincipleDemo;
