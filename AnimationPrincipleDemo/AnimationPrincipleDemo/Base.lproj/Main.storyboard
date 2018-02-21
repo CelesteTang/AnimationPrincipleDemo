@@ -21,21 +21,31 @@
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Eq2-GS-9Up">
                                 <rect key="frame" x="0.0" y="451" width="375" height="216"/>
                             </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Animation" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7CI-xs-zoW">
+                                <rect key="frame" x="143.5" y="50" width="88" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="7CI-xs-zoW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="G4R-KD-b1b"/>
                             <constraint firstItem="Eq2-GS-9Up" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Zyc-QE-0Td"/>
                             <constraint firstItem="Eq2-GS-9Up" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="ekH-Lh-BLb"/>
                             <constraint firstItem="Eq2-GS-9Up" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="goR-8v-pwh"/>
+                            <constraint firstItem="7CI-xs-zoW" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="50" id="lEp-QA-4CN"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="animationName" destination="7CI-xs-zoW" id="2OQ-p6-l4g"/>
                         <outlet property="animationPickerView" destination="Eq2-GS-9Up" id="9LJ-JC-MDo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="33.733133433283363"/>
         </scene>
     </scenes>
 </document>

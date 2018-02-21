@@ -10,7 +10,10 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var animationName: UILabel!
     @IBOutlet weak var animationPickerView: UIPickerView!
+    
+    var pickedAnimation: Animation = Animation(type: Timing.easing)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,6 +47,12 @@ extension ViewController: UIPickerViewDelegate {
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        // TODO: execute corresponding action
+        pickedAnimation.stop()
+        
+        pickedAnimation = AnimationPrinciples.animations[row]
+        animationName.text = pickedAnimation.name
+        if pickedAnimation.state == .inactive {
+            AnimationPrinciples.animations[row].start()
+        }
     }
 }

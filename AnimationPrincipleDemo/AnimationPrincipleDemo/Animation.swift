@@ -8,10 +8,28 @@
 
 import Foundation
 
+enum AnimationState {
+    case active, stopped, inactive
+}
+
 class Animation {
-    let name: String
     
-    init(name: String) {
-        self.name = name
+    let name: String
+    var state: AnimationState = .inactive
+    var action: (() -> Void)
+    
+    init(type: AnimationProtocol) {
+        self.name = type.name
+        self.action = type.action
+    }
+    
+    func start() {
+        state = .active
+        action()
+    }
+    
+    func stop() {
+        state = .stopped
+        // TODO: When completion, state = .inactive
     }
 }

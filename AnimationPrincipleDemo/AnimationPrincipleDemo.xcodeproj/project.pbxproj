@@ -14,6 +14,7 @@
 		438FDFE9203DA5C900F8D1EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 438FDFE7203DA5C900F8D1EF /* LaunchScreen.storyboard */; };
 		438FDFF1203DAA9600F8D1EF /* AnimationPrinciples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438FDFF0203DAA9600F8D1EF /* AnimationPrinciples.swift */; };
 		438FDFF3203DAE6300F8D1EF /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438FDFF2203DAE6300F8D1EF /* Animation.swift */; };
+		438FDFF5203DC28F00F8D1EF /* AnimationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438FDFF4203DC28F00F8D1EF /* AnimationProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		438FDFEA203DA5C900F8D1EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		438FDFF0203DAA9600F8D1EF /* AnimationPrinciples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationPrinciples.swift; sourceTree = "<group>"; };
 		438FDFF2203DAE6300F8D1EF /* Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animation.swift; sourceTree = "<group>"; };
+		438FDFF4203DC28F00F8D1EF /* AnimationProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				438FDFE0203DA5C900F8D1EF /* ViewController.swift */,
 				438FDFF0203DAA9600F8D1EF /* AnimationPrinciples.swift */,
 				438FDFF2203DAE6300F8D1EF /* Animation.swift */,
+				438FDFF4203DC28F00F8D1EF /* AnimationProtocol.swift */,
 				438FDFE2203DA5C900F8D1EF /* Main.storyboard */,
 				438FDFE5203DA5C900F8D1EF /* Assets.xcassets */,
 				438FDFE7203DA5C900F8D1EF /* LaunchScreen.storyboard */,
@@ -143,6 +146,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				438FDFE1203DA5C900F8D1EF /* ViewController.swift in Sources */,
+				438FDFF5203DC28F00F8D1EF /* AnimationProtocol.swift in Sources */,
 				438FDFF1203DAA9600F8D1EF /* AnimationPrinciples.swift in Sources */,
 				438FDFF3203DAE6300F8D1EF /* Animation.swift in Sources */,
 				438FDFDF203DA5C900F8D1EF /* AppDelegate.swift in Sources */,
