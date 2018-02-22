@@ -13,10 +13,10 @@
 		438FDFE9203DA5C900F8D1EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 438FDFE7203DA5C900F8D1EF /* LaunchScreen.storyboard */; };
 		438FDFF1203DAA9600F8D1EF /* AnimationPrinciples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438FDFF0203DAA9600F8D1EF /* AnimationPrinciples.swift */; };
 		438FDFF3203DAE6300F8D1EF /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438FDFF2203DAE6300F8D1EF /* Animation.swift */; };
-		438FDFF5203DC28F00F8D1EF /* AnimationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438FDFF4203DC28F00F8D1EF /* AnimationProtocol.swift */; };
 		438FDFF8203E56C900F8D1EF /* EasingAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438FDFF7203E56C900F8D1EF /* EasingAction.swift */; };
 		438FDFFA203E62FF00F8D1EF /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438FDFF9203E62FF00F8D1EF /* Action.swift */; };
 		438FDFFD203EBF7600F8D1EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 438FDFFB203EBF7600F8D1EF /* Main.storyboard */; };
+		438FDFFF203EC1E800F8D1EF /* OffsetAndDelayAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438FDFFE203EC1E800F8D1EF /* OffsetAndDelayAction.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,10 +28,10 @@
 		438FDFEA203DA5C900F8D1EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		438FDFF0203DAA9600F8D1EF /* AnimationPrinciples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationPrinciples.swift; sourceTree = "<group>"; };
 		438FDFF2203DAE6300F8D1EF /* Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animation.swift; sourceTree = "<group>"; };
-		438FDFF4203DC28F00F8D1EF /* AnimationProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationProtocol.swift; sourceTree = "<group>"; };
 		438FDFF7203E56C900F8D1EF /* EasingAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasingAction.swift; sourceTree = "<group>"; };
 		438FDFF9203E62FF00F8D1EF /* Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
 		438FDFFC203EBF7600F8D1EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = AnimationPrincipleDemo/Base.lproj/Main.storyboard; sourceTree = SOURCE_ROOT; };
+		438FDFFE203EC1E800F8D1EF /* OffsetAndDelayAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffsetAndDelayAction.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,7 +67,6 @@
 				438FDFDE203DA5C900F8D1EF /* AppDelegate.swift */,
 				438FDFE0203DA5C900F8D1EF /* ViewController.swift */,
 				438FDFF2203DAE6300F8D1EF /* Animation.swift */,
-				438FDFF4203DC28F00F8D1EF /* AnimationProtocol.swift */,
 				438FDFF0203DAA9600F8D1EF /* AnimationPrinciples.swift */,
 				438FDFF6203E569C00F8D1EF /* Animations */,
 				438FDFE5203DA5C900F8D1EF /* Assets.xcassets */,
@@ -82,6 +81,7 @@
 			children = (
 				438FDFF9203E62FF00F8D1EF /* Action.swift */,
 				438FDFF7203E56C900F8D1EF /* EasingAction.swift */,
+				438FDFFE203EC1E800F8D1EF /* OffsetAndDelayAction.swift */,
 				438FDFFB203EBF7600F8D1EF /* Main.storyboard */,
 			);
 			path = Animations;
@@ -160,7 +160,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				438FDFE1203DA5C900F8D1EF /* ViewController.swift in Sources */,
-				438FDFF5203DC28F00F8D1EF /* AnimationProtocol.swift in Sources */,
+				438FDFFF203EC1E800F8D1EF /* OffsetAndDelayAction.swift in Sources */,
 				438FDFF1203DAA9600F8D1EF /* AnimationPrinciples.swift in Sources */,
 				438FDFF3203DAE6300F8D1EF /* Animation.swift in Sources */,
 				438FDFFA203E62FF00F8D1EF /* Action.swift in Sources */,

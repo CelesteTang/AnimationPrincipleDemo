@@ -19,46 +19,42 @@ class EasingAction: Action {
     }
     
     func start() {
+        
+        let middleX = fullSize.width * 0.5
+        let middleY = fullSize.height * 0.5
+        
         view1.frame.size = CGSize(width: 100, height: 100)
-        view1.center = CGPoint(x: fullSize.width * 0.5, y: fullSize.height * 0.5)
+        view1.center = CGPoint(x: middleX, y: middleY)
         view1.backgroundColor = .lightGray
         parent.view.addSubview(view1)
         
-        let positionAnim1 = CAKeyframeAnimation(keyPath: "position")
-        let p1 = CGPoint(x: view1.center.x - 250, y: fullSize.height * 0.5)
-        let p2 = CGPoint(x: view1.center.x, y: fullSize.height * 0.5)
-        let p3 = CGPoint(x: view1.center.x + 250, y: fullSize.height * 0.5)
-        positionAnim1.values = [p1, p2, p2, p3]
-        positionAnim1.keyTimes = [0, 0.5, 0.7, 1]
-        positionAnim1.timingFunctions = [
-            CAMediaTimingFunction(name: kCAMediaTimingFunctionDefault),
-            CAMediaTimingFunction(name: kCAMediaTimingFunctionDefault),
-            CAMediaTimingFunction(name: kCAMediaTimingFunctionLinear),
-            CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseIn)]
-        positionAnim1.duration = 3
-        positionAnim1.speed = 1.5
-        positionAnim1.repeatCount = .infinity
-        view1.layer.add(positionAnim1, forKey: "Animation")
+        let positionAnim: CAKeyframeAnimation = {
+            
+            let anim = CAKeyframeAnimation(keyPath: "position")
+            
+            let p1 = CGPoint(x: view1.center.x - 250, y: middleY)
+            let p2 = CGPoint(x: view1.center.x, y: middleY)
+            let p3 = CGPoint(x: view1.center.x + 250, y: middleY)
+            
+            anim.values = [p1, p2, p2, p3]
+            anim.keyTimes = [0, 0.5, 0.7, 1]
+            anim.timingFunctions = [
+                CAMediaTimingFunction(name: kCAMediaTimingFunctionDefault),
+                CAMediaTimingFunction(name: kCAMediaTimingFunctionDefault),
+                CAMediaTimingFunction(name: kCAMediaTimingFunctionLinear),
+                CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseIn)]
+            anim.duration = 3
+            anim.speed = 1.5
+            anim.repeatCount = .infinity
+            
+            return anim
+        }()
+        
+        view1.layer.add(positionAnim, forKey: "Animation")
     }
-    
-    func pause() {
-        let pausedTime = view1.layer.convertTime(CACurrentMediaTime(), from: nil)
-        view1.layer.speed = 0.0
-        view1.layer.timeOffset = pausedTime
-    }
-    
-    func resume() {
-        let pausedTime = view1.layer.timeOffset
-        view1.layer.speed = 1.0
-        view1.layer.timeOffset = 0.0
-        view1.layer.beginTime = 0.0
-        let timeSincePause = view1.layer.convertTime(CACurrentMediaTime(), from: nil) - pausedTime
-        view1.layer.beginTime = timeSincePause
-    }
-    
+
     func stop(completion: ((Bool) -> Void)?) {
-        view1.layer.removeAllAnimations()
-        view1.removeFromSuperview()
+        stopAnimate(views: [view1])
         completion?(true)
     }
 }

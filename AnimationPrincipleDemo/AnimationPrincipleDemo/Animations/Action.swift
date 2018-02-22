@@ -22,6 +22,39 @@ protocol Action {
 
 }
 
+extension Action {
+    
+    func pause() {}
+    
+    func resume() {}
+    
+    func pauseAnimate(views: [UIView]) {
+        views.forEach {
+            let pausedTime = $0.layer.convertTime(CACurrentMediaTime(), from: nil)
+            $0.layer.speed = 0.0
+            $0.layer.timeOffset = pausedTime
+        }
+    }
+    
+    func resumeAnimate(views: [UIView]) {
+        views.forEach {
+            let pausedTime = $0.layer.timeOffset
+            $0.layer.speed = 1.0
+            $0.layer.timeOffset = 0.0
+            $0.layer.beginTime = 0.0
+            let timeSincePause = $0.layer.convertTime(CACurrentMediaTime(), from: nil) - pausedTime
+            $0.layer.beginTime = timeSincePause
+        }
+    }
+    
+    func stopAnimate(views: [UIView]) {
+        views.forEach {
+            $0.layer.removeAllAnimations()
+            $0.removeFromSuperview()
+        }
+    }
+}
+
 class ActionFactory {
     
     func createAction(of name: String) -> Action? {
@@ -34,6 +67,7 @@ class ActionFactory {
 
         switch name {
         case AnimationPrinciples.Timing.easing: return EasingAction(parent: viewController)
+        case AnimationPrinciples.Timing.offsetAndDelay: return OffsetAndDelayAction(parent: viewController)
         default: return EasingAction(parent: viewController)
         }
     }

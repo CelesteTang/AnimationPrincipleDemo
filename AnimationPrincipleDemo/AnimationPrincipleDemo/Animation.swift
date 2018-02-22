@@ -16,6 +16,7 @@ class Animation {
     
     let name: String
     var state: AnimationState = .inactive
+    
     lazy var action: Action = {
         let action = ActionFactory().createAction(of: name)
         return action!
