@@ -13,16 +13,17 @@ class ViewController: UIViewController {
     @IBOutlet weak var animationName: UILabel!
     @IBOutlet weak var animationPickerView: UIPickerView!
     
-    var pickedAnimation: Animation = Animation(type: Timing.easing)
+    var pickedAnimation: Animation = Animation(name: AnimationPrinciples.Timing.easing)
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        pickedAnimation.start()
         animationPickerView.dataSource = self
         animationPickerView.delegate = self
         
     }
-
+    
 }
 
 // MARK: - UIPickerViewDataSource
@@ -51,8 +52,9 @@ extension ViewController: UIPickerViewDelegate {
         
         pickedAnimation = AnimationPrinciples.animations[row]
         animationName.text = pickedAnimation.name
+        
         if pickedAnimation.state == .inactive {
-            AnimationPrinciples.animations[row].start()
+            pickedAnimation.start()
         }
     }
 }

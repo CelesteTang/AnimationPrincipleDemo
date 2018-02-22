@@ -10,19 +10,47 @@ import Foundation
 
 struct AnimationPrinciples {
 
+    struct Timing {
+        static let easing = "Easing"
+        static let offsetAndDelay = "Offset & Delay"
+    }
+    
+    struct ObjectRelationship {
+        static let parenting = "Parenting"
+    }
+    
+    struct ObjectContinuity {
+        static let transformation = "Transformation"
+        static let valueChange = "Value Change"
+        static let masking = "Masking"
+        static let overlay = "Overlay"
+        static let cloning = "Cloning"
+    }
+    
+    struct TemporalHierarchy {
+        static let parallax = "Parallax"
+    }
+    
+    struct SpatialContinuity {
+        static let obscuration = "Obscuration"
+        static let dimensionality = "Dimensionality"
+        static let dollyAndZoom = "Dolly & Zoom"
+    }
+
+    
     static var animations: [Animation] {
-        let easing         = Animation(type: Timing.easing)
-        let OffsetAndDelay = Animation(type: Timing.offsetAndDelay)
-        let parenting      = Animation(type: ObjectRelationship.parenting)
-        let transformation = Animation(type: ObjectContinuity.transformation)
-        let valueChange    = Animation(type: ObjectContinuity.valueChange)
-        let masking        = Animation(type: ObjectContinuity.masking)
-        let overlay        = Animation(type: ObjectContinuity.overlay)
-        let cloning        = Animation(type: ObjectContinuity.cloning)
-        let parallax       = Animation(type: TemporalHierarchy.parallax)
-        let obscuration    = Animation(type: SpatialContinuity.obscuration)
-        let dimensionality = Animation(type: SpatialContinuity.dimensionality)
-        let dollyAndZoom   = Animation(type: SpatialContinuity.dollyAndZoom)
+        let easing         = Animation(name: Timing.easing)
+        let OffsetAndDelay = Animation(name: Timing.offsetAndDelay)
+        let parenting      = Animation(name: ObjectRelationship.parenting)
+        let transformation = Animation(name: ObjectContinuity.transformation)
+        let valueChange    = Animation(name: ObjectContinuity.valueChange)
+        let masking        = Animation(name: ObjectContinuity.masking)
+        let overlay        = Animation(name: ObjectContinuity.overlay)
+        let cloning        = Animation(name: ObjectContinuity.cloning)
+        let parallax       = Animation(name: TemporalHierarchy.parallax)
+        let obscuration    = Animation(name: SpatialContinuity.obscuration)
+        let dimensionality = Animation(name: SpatialContinuity.dimensionality)
+        let dollyAndZoom   = Animation(name: SpatialContinuity.dollyAndZoom)
 
         return [easing, OffsetAndDelay, parenting, transformation, valueChange, masking, overlay, cloning, parallax, obscuration, dimensionality, dollyAndZoom]
     }

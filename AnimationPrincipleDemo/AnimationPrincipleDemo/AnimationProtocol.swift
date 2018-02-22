@@ -7,10 +7,10 @@
 //
 
 import Foundation
-
+/*
 protocol AnimationProtocol {
     var name: String { get }
-    var action: () -> Void { get }
+    var action: Action { get }
 }
 
 enum Timing: AnimationProtocol {
@@ -24,11 +24,13 @@ enum Timing: AnimationProtocol {
         }
     }
     
-    var action: () -> Void {
-        return abc
-    }
+    lazy var action: Action = {
+        switch self {
+        case .easing: return EasingAction(parent: ViewController())
+        case .offsetAndDelay: return EasingAction(parent: ViewController())
+        }
+    }()
     
-    func abc() {}
 }
 
 enum ObjectRelationship: AnimationProtocol {
@@ -41,11 +43,10 @@ enum ObjectRelationship: AnimationProtocol {
         }
     }
     
-    var action: () -> Void {
-        return abc
+    var action: Action {
+        return EasingAction(parent: ViewController())
     }
-    
-    func abc() {}
+
 }
 
 enum ObjectContinuity: AnimationProtocol {
@@ -62,11 +63,9 @@ enum ObjectContinuity: AnimationProtocol {
         }
     }
     
-    var action: () -> Void {
-        return abc
+    var action: Action {
+        return EasingAction(parent: ViewController())
     }
-    
-    func abc() {}
 }
 
 enum TemporalHierarchy: AnimationProtocol {
@@ -79,11 +78,9 @@ enum TemporalHierarchy: AnimationProtocol {
         }
     }
     
-    var action: () -> Void {
-        return abc
+    var action: Action {
+        return EasingAction(parent: ViewController())
     }
-    
-    func abc() {}
 }
 
 enum SpatialContinuity: AnimationProtocol {
@@ -92,15 +89,14 @@ enum SpatialContinuity: AnimationProtocol {
     
     var name: String {
         switch self {
-        case .obscuration: return "Transformation"
-        case .dimensionality: return "Value Change"
-        case .dollyAndZoom: return "Masking"
+        case .obscuration: return "Obscuration"
+        case .dimensionality: return "Dimensionality"
+        case .dollyAndZoom: return "Dolly & Zoom"
         }
     }
     
-    var action: () -> Void {
-        return abc
+    var action: Action {
+        return EasingAction(parent: ViewController())
     }
-    
-    func abc() {}
 }
+*/

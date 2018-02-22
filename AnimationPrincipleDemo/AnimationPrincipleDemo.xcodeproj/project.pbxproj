@@ -9,25 +9,29 @@
 /* Begin PBXBuildFile section */
 		438FDFDF203DA5C900F8D1EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438FDFDE203DA5C900F8D1EF /* AppDelegate.swift */; };
 		438FDFE1203DA5C900F8D1EF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438FDFE0203DA5C900F8D1EF /* ViewController.swift */; };
-		438FDFE4203DA5C900F8D1EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 438FDFE2203DA5C900F8D1EF /* Main.storyboard */; };
 		438FDFE6203DA5C900F8D1EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 438FDFE5203DA5C900F8D1EF /* Assets.xcassets */; };
 		438FDFE9203DA5C900F8D1EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 438FDFE7203DA5C900F8D1EF /* LaunchScreen.storyboard */; };
 		438FDFF1203DAA9600F8D1EF /* AnimationPrinciples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438FDFF0203DAA9600F8D1EF /* AnimationPrinciples.swift */; };
 		438FDFF3203DAE6300F8D1EF /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438FDFF2203DAE6300F8D1EF /* Animation.swift */; };
 		438FDFF5203DC28F00F8D1EF /* AnimationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438FDFF4203DC28F00F8D1EF /* AnimationProtocol.swift */; };
+		438FDFF8203E56C900F8D1EF /* EasingAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438FDFF7203E56C900F8D1EF /* EasingAction.swift */; };
+		438FDFFA203E62FF00F8D1EF /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438FDFF9203E62FF00F8D1EF /* Action.swift */; };
+		438FDFFD203EBF7600F8D1EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 438FDFFB203EBF7600F8D1EF /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		438FDFDB203DA5C900F8D1EF /* AnimationPrincipleDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimationPrincipleDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		438FDFDE203DA5C900F8D1EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		438FDFE0203DA5C900F8D1EF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		438FDFE3203DA5C900F8D1EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		438FDFE5203DA5C900F8D1EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		438FDFE8203DA5C900F8D1EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		438FDFEA203DA5C900F8D1EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		438FDFF0203DAA9600F8D1EF /* AnimationPrinciples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationPrinciples.swift; sourceTree = "<group>"; };
 		438FDFF2203DAE6300F8D1EF /* Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animation.swift; sourceTree = "<group>"; };
 		438FDFF4203DC28F00F8D1EF /* AnimationProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationProtocol.swift; sourceTree = "<group>"; };
+		438FDFF7203E56C900F8D1EF /* EasingAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasingAction.swift; sourceTree = "<group>"; };
+		438FDFF9203E62FF00F8D1EF /* Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
+		438FDFFC203EBF7600F8D1EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = AnimationPrincipleDemo/Base.lproj/Main.storyboard; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,15 +66,25 @@
 			children = (
 				438FDFDE203DA5C900F8D1EF /* AppDelegate.swift */,
 				438FDFE0203DA5C900F8D1EF /* ViewController.swift */,
-				438FDFF0203DAA9600F8D1EF /* AnimationPrinciples.swift */,
 				438FDFF2203DAE6300F8D1EF /* Animation.swift */,
 				438FDFF4203DC28F00F8D1EF /* AnimationProtocol.swift */,
-				438FDFE2203DA5C900F8D1EF /* Main.storyboard */,
+				438FDFF0203DAA9600F8D1EF /* AnimationPrinciples.swift */,
+				438FDFF6203E569C00F8D1EF /* Animations */,
 				438FDFE5203DA5C900F8D1EF /* Assets.xcassets */,
 				438FDFE7203DA5C900F8D1EF /* LaunchScreen.storyboard */,
 				438FDFEA203DA5C900F8D1EF /* Info.plist */,
 			);
 			path = AnimationPrincipleDemo;
+			sourceTree = "<group>";
+		};
+		438FDFF6203E569C00F8D1EF /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				438FDFF9203E62FF00F8D1EF /* Action.swift */,
+				438FDFF7203E56C900F8D1EF /* EasingAction.swift */,
+				438FDFFB203EBF7600F8D1EF /* Main.storyboard */,
+			);
+			path = Animations;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -132,9 +146,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				438FDFFD203EBF7600F8D1EF /* Main.storyboard in Resources */,
 				438FDFE9203DA5C900F8D1EF /* LaunchScreen.storyboard in Resources */,
 				438FDFE6203DA5C900F8D1EF /* Assets.xcassets in Resources */,
-				438FDFE4203DA5C900F8D1EF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,27 +163,29 @@
 				438FDFF5203DC28F00F8D1EF /* AnimationProtocol.swift in Sources */,
 				438FDFF1203DAA9600F8D1EF /* AnimationPrinciples.swift in Sources */,
 				438FDFF3203DAE6300F8D1EF /* Animation.swift in Sources */,
+				438FDFFA203E62FF00F8D1EF /* Action.swift in Sources */,
 				438FDFDF203DA5C900F8D1EF /* AppDelegate.swift in Sources */,
+				438FDFF8203E56C900F8D1EF /* EasingAction.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		438FDFE2203DA5C900F8D1EF /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				438FDFE3203DA5C900F8D1EF /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		438FDFE7203DA5C900F8D1EF /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				438FDFE8203DA5C900F8D1EF /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		438FDFFB203EBF7600F8D1EF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				438FDFFC203EBF7600F8D1EF /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

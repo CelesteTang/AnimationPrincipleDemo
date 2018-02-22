@@ -16,20 +16,34 @@ class Animation {
     
     let name: String
     var state: AnimationState = .inactive
-    var action: (() -> Void)
+    lazy var action: Action = {
+        let action = ActionFactory().createAction(of: name)
+        return action!
+    }()
     
-    init(type: AnimationProtocol) {
-        self.name = type.name
-        self.action = type.action
+    init(name: String) {
+        self.name = name
     }
     
     func start() {
         state = .active
-        action()
+        action.start()
+    }
+    
+    func pause() {
+        action.pause()
+    }
+    
+    func resume() {
+        action.resume()
     }
     
     func stop() {
         state = .stopped
-        // TODO: When completion, state = .inactive
+        action.stop { [weak self] stopped in
+            if stopped {
+                self?.state = .inactive
+            }
+        }
     }
 }
