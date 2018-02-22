@@ -68,6 +68,7 @@ class ActionFactory {
         switch name {
         case AnimationPrinciples.Timing.easing: return EasingAction(parent: viewController)
         case AnimationPrinciples.Timing.offsetAndDelay: return OffsetAndDelayAction(parent: viewController)
+        case AnimationPrinciples.ObjectRelationship.parenting: return ParentingAction(parent: viewController)
         default: return EasingAction(parent: viewController)
         }
     }

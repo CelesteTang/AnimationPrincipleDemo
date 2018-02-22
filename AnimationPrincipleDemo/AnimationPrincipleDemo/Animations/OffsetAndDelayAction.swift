@@ -6,8 +6,6 @@
 //  Copyright © 2018年 Hsin-Yu Tang. All rights reserved.
 //
 
-import Foundation
-
 import UIKit
 
 class OffsetAndDelayAction: Action {

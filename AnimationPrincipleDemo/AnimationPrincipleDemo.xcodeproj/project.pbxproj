@@ -17,6 +17,7 @@
 		438FDFFA203E62FF00F8D1EF /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438FDFF9203E62FF00F8D1EF /* Action.swift */; };
 		438FDFFD203EBF7600F8D1EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 438FDFFB203EBF7600F8D1EF /* Main.storyboard */; };
 		438FDFFF203EC1E800F8D1EF /* OffsetAndDelayAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438FDFFE203EC1E800F8D1EF /* OffsetAndDelayAction.swift */; };
+		438FE001203F193D00F8D1EF /* ParentingAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438FE000203F193D00F8D1EF /* ParentingAction.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		438FDFF9203E62FF00F8D1EF /* Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
 		438FDFFC203EBF7600F8D1EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = AnimationPrincipleDemo/Base.lproj/Main.storyboard; sourceTree = SOURCE_ROOT; };
 		438FDFFE203EC1E800F8D1EF /* OffsetAndDelayAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffsetAndDelayAction.swift; sourceTree = "<group>"; };
+		438FE000203F193D00F8D1EF /* ParentingAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentingAction.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 				438FDFF9203E62FF00F8D1EF /* Action.swift */,
 				438FDFF7203E56C900F8D1EF /* EasingAction.swift */,
 				438FDFFE203EC1E800F8D1EF /* OffsetAndDelayAction.swift */,
+				438FE000203F193D00F8D1EF /* ParentingAction.swift */,
 				438FDFFB203EBF7600F8D1EF /* Main.storyboard */,
 			);
 			path = Animations;
@@ -165,6 +168,7 @@
 				438FDFF3203DAE6300F8D1EF /* Animation.swift in Sources */,
 				438FDFFA203E62FF00F8D1EF /* Action.swift in Sources */,
 				438FDFDF203DA5C900F8D1EF /* AppDelegate.swift in Sources */,
+				438FE001203F193D00F8D1EF /* ParentingAction.swift in Sources */,
 				438FDFF8203E56C900F8D1EF /* EasingAction.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
