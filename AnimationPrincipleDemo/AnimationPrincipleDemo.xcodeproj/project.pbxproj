@@ -18,6 +18,7 @@
 		438FDFFD203EBF7600F8D1EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 438FDFFB203EBF7600F8D1EF /* Main.storyboard */; };
 		438FDFFF203EC1E800F8D1EF /* OffsetAndDelayAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438FDFFE203EC1E800F8D1EF /* OffsetAndDelayAction.swift */; };
 		438FE001203F193D00F8D1EF /* ParentingAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438FE000203F193D00F8D1EF /* ParentingAction.swift */; };
+		438FE003203FBAC900F8D1EF /* TransformationAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438FE002203FBAC900F8D1EF /* TransformationAction.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		438FDFFC203EBF7600F8D1EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = AnimationPrincipleDemo/Base.lproj/Main.storyboard; sourceTree = SOURCE_ROOT; };
 		438FDFFE203EC1E800F8D1EF /* OffsetAndDelayAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffsetAndDelayAction.swift; sourceTree = "<group>"; };
 		438FE000203F193D00F8D1EF /* ParentingAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentingAction.swift; sourceTree = "<group>"; };
+		438FE002203FBAC900F8D1EF /* TransformationAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformationAction.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 				438FDFF7203E56C900F8D1EF /* EasingAction.swift */,
 				438FDFFE203EC1E800F8D1EF /* OffsetAndDelayAction.swift */,
 				438FE000203F193D00F8D1EF /* ParentingAction.swift */,
+				438FE002203FBAC900F8D1EF /* TransformationAction.swift */,
 				438FDFFB203EBF7600F8D1EF /* Main.storyboard */,
 			);
 			path = Animations;
@@ -162,6 +165,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				438FE003203FBAC900F8D1EF /* TransformationAction.swift in Sources */,
 				438FDFE1203DA5C900F8D1EF /* ViewController.swift in Sources */,
 				438FDFFF203EC1E800F8D1EF /* OffsetAndDelayAction.swift in Sources */,
 				438FDFF1203DAA9600F8D1EF /* AnimationPrinciples.swift in Sources */,
