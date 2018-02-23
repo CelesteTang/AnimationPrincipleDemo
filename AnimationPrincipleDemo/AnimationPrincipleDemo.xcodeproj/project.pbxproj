@@ -20,6 +20,7 @@
 		438FE001203F193D00F8D1EF /* ParentingAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438FE000203F193D00F8D1EF /* ParentingAction.swift */; };
 		438FE003203FBAC900F8D1EF /* TransformationAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438FE002203FBAC900F8D1EF /* TransformationAction.swift */; };
 		438FE005203FC01A00F8D1EF /* ValueChangeAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438FE004203FC01A00F8D1EF /* ValueChangeAction.swift */; };
+		438FE00720403CDF00F8D1EF /* MaskingAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438FE00620403CDF00F8D1EF /* MaskingAction.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		438FE000203F193D00F8D1EF /* ParentingAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentingAction.swift; sourceTree = "<group>"; };
 		438FE002203FBAC900F8D1EF /* TransformationAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformationAction.swift; sourceTree = "<group>"; };
 		438FE004203FC01A00F8D1EF /* ValueChangeAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValueChangeAction.swift; sourceTree = "<group>"; };
+		438FE00620403CDF00F8D1EF /* MaskingAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaskingAction.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 				438FE000203F193D00F8D1EF /* ParentingAction.swift */,
 				438FE002203FBAC900F8D1EF /* TransformationAction.swift */,
 				438FE004203FC01A00F8D1EF /* ValueChangeAction.swift */,
+				438FE00620403CDF00F8D1EF /* MaskingAction.swift */,
 				438FDFFB203EBF7600F8D1EF /* Main.storyboard */,
 			);
 			path = Animations;
@@ -176,6 +179,7 @@
 				438FDFFA203E62FF00F8D1EF /* Action.swift in Sources */,
 				438FDFDF203DA5C900F8D1EF /* AppDelegate.swift in Sources */,
 				438FE001203F193D00F8D1EF /* ParentingAction.swift in Sources */,
+				438FE00720403CDF00F8D1EF /* MaskingAction.swift in Sources */,
 				438FDFF8203E56C900F8D1EF /* EasingAction.swift in Sources */,
 				438FE005203FC01A00F8D1EF /* ValueChangeAction.swift in Sources */,
 			);

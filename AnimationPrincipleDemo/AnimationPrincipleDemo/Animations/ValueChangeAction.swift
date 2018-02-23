@@ -24,6 +24,8 @@ class ValueChangeAction: NSObject, Action {
         return label
     }()
     
+    var downloadTask = URLSessionDownloadTask()
+    
     required init(parent: UIViewController) {
         self.parent = parent
     }
@@ -35,6 +37,7 @@ class ValueChangeAction: NSObject, Action {
     }
     
     func stop(completion: ((Bool) -> Void)?) {
+        downloadTask.cancel()
         stopAnimate(layers: [trackLayer, shapeLayer])
         percentageLabel.removeFromSuperview()
         completion?(true)
@@ -98,7 +101,7 @@ class ValueChangeAction: NSObject, Action {
         let operationQueue = OperationQueue()
         let urlSession = URLSession(configuration: configuration, delegate: self, delegateQueue: operationQueue)
         guard let url = URL(string: urlString) else { return }
-        let downloadTask = urlSession.downloadTask(with: url)
+        downloadTask = urlSession.downloadTask(with: url)
         downloadTask.resume()
     }
 }

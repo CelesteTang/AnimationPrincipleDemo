@@ -54,7 +54,7 @@ extension Action {
         }
     }
     
-    func stopAnimate(layers: [CAShapeLayer]) {
+    func stopAnimate(layers: [CALayer]) {
         layers.forEach {
             $0.removeAllAnimations()
             $0.removeFromSuperlayer()
@@ -78,6 +78,7 @@ class ActionFactory {
         case AnimationPrinciples.ObjectRelationship.parenting: return ParentingAction(parent: viewController)
         case AnimationPrinciples.ObjectContinuity.transformation: return TransformationAction(parent: viewController)
         case AnimationPrinciples.ObjectContinuity.valueChange: return ValueChangeAction(parent: viewController)
+        case AnimationPrinciples.ObjectContinuity.masking: return MaskingAction(parent: viewController)
 
         default: return EasingAction(parent: viewController)
         }
