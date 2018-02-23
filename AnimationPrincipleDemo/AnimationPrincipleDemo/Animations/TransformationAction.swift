@@ -41,7 +41,7 @@ class TransformationAction: Action {
     
     private func bounds(view: UIView) {
         
-        let positionAnim: CABasicAnimation = {
+        let anim: CABasicAnimation = {
             
             let anim = CABasicAnimation(keyPath: "bounds.size")
             anim.fromValue = CGSize(width: 50, height: 50)
@@ -55,12 +55,12 @@ class TransformationAction: Action {
             return anim
         }()
         
-        view.layer.add(positionAnim, forKey: "bounds\(view)")
+        view.layer.add(anim, forKey: "bounds\(view)")
     }
     
     private func cornerRadius(view: UIView) {
         
-        let positionAnim: CABasicAnimation = {
+        let anim: CABasicAnimation = {
             
             let anim = CABasicAnimation(keyPath: "cornerRadius")
             anim.fromValue = 25
@@ -74,6 +74,6 @@ class TransformationAction: Action {
             return anim
         }()
         
-        view.layer.add(positionAnim, forKey: "cornerRadius\(view)")
+        view.layer.add(anim, forKey: "cornerRadius\(view)")
     }
 }

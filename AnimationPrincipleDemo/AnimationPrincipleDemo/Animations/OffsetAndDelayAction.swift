@@ -45,7 +45,7 @@ class OffsetAndDelayAction: Action {
     
     private func animate(view: UIView, timing: String, keyTime: NSNumber) {
         
-        let positionAnim: CAKeyframeAnimation = {
+        let anim: CAKeyframeAnimation = {
             
             let anim = CAKeyframeAnimation(keyPath: "position")
             
@@ -67,6 +67,6 @@ class OffsetAndDelayAction: Action {
             return anim
         }()
 
-        view.layer.add(positionAnim, forKey: "\(view)")
+        view.layer.add(anim, forKey: "\(view)")
     }
 }

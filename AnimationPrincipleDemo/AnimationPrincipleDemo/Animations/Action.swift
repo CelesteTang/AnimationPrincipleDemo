@@ -53,6 +53,13 @@ extension Action {
             $0.removeFromSuperview()
         }
     }
+    
+    func stopAnimate(layers: [CAShapeLayer]) {
+        layers.forEach {
+            $0.removeAllAnimations()
+            $0.removeFromSuperlayer()
+        }
+    }
 }
 
 class ActionFactory {
@@ -70,6 +77,8 @@ class ActionFactory {
         case AnimationPrinciples.Timing.offsetAndDelay: return OffsetAndDelayAction(parent: viewController)
         case AnimationPrinciples.ObjectRelationship.parenting: return ParentingAction(parent: viewController)
         case AnimationPrinciples.ObjectContinuity.transformation: return TransformationAction(parent: viewController)
+        case AnimationPrinciples.ObjectContinuity.valueChange: return ValueChangeAction(parent: viewController)
+
         default: return EasingAction(parent: viewController)
         }
     }

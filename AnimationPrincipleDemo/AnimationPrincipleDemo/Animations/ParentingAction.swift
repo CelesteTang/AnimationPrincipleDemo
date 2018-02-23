@@ -43,7 +43,7 @@ class ParentingAction: Action {
     
     private func position(view: UIView) {
         
-        let positionAnim: CABasicAnimation = {
+        let anim: CABasicAnimation = {
             
             let anim = CABasicAnimation(keyPath: "position.x")
             anim.fromValue = view.center.x + 100
@@ -57,14 +57,14 @@ class ParentingAction: Action {
             return anim
         }()
         
-        view.layer.add(positionAnim, forKey: "position\(view)")
+        view.layer.add(anim, forKey: "position\(view)")
     }
     
     private func transform(view: UIView) {
         
         view.layer.anchorPoint = CGPoint(x: 0.5, y: 1)
         
-        let positionAnim: CABasicAnimation = {
+        let anim: CABasicAnimation = {
             
             let anim = CABasicAnimation(keyPath: "transform.scale")
             anim.fromValue = 1
@@ -78,6 +78,6 @@ class ParentingAction: Action {
             return anim
         }()
         
-        view.layer.add(positionAnim, forKey: "transform\(view)")
+        view.layer.add(anim, forKey: "transform\(view)")
     }
 }

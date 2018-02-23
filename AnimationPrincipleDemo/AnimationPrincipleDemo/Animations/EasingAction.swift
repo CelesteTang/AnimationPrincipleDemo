@@ -28,7 +28,7 @@ class EasingAction: Action {
         view1.backgroundColor = .lightGray
         parent.view.addSubview(view1)
         
-        let positionAnim: CAKeyframeAnimation = {
+        let anim: CAKeyframeAnimation = {
             
             let anim = CAKeyframeAnimation(keyPath: "position")
             
@@ -50,7 +50,7 @@ class EasingAction: Action {
             return anim
         }()
         
-        view1.layer.add(positionAnim, forKey: "Animation")
+        view1.layer.add(anim, forKey: "Animation")
     }
 
     func stop(completion: ((Bool) -> Void)?) {
