@@ -18,9 +18,9 @@ class ValueChangeAction: NSObject, Action {
     
     let percentageLabel: UILabel = {
         let label = UILabel()
-        label.text = "Start"
+        label.text = "Processing"
         label.textAlignment = .center
-        label.font = UIFont.boldSystemFont(ofSize: 32)
+        label.font = UIFont.boldSystemFont(ofSize: 18)
         return label
     }()
     
@@ -115,6 +115,7 @@ extension ValueChangeAction: URLSessionDownloadDelegate {
         
         DispatchQueue.main.async {
             self.shapeLayer.strokeEnd = percentage
+            self.percentageLabel.font = UIFont.boldSystemFont(ofSize: 32)
             self.percentageLabel.text = "\(Int(percentage * 100))%"
         }
 
