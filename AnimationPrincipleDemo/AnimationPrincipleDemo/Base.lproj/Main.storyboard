@@ -22,8 +22,8 @@
                                 <rect key="frame" x="0.0" y="451" width="375" height="216"/>
                             </pickerView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Easing" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7CI-xs-zoW">
-                                <rect key="frame" x="158" y="50" width="59" height="24"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <rect key="frame" x="141.5" y="80" width="92" height="38.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -34,7 +34,7 @@
                             <constraint firstItem="Eq2-GS-9Up" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Zyc-QE-0Td"/>
                             <constraint firstItem="Eq2-GS-9Up" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="ekH-Lh-BLb"/>
                             <constraint firstItem="Eq2-GS-9Up" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="goR-8v-pwh"/>
-                            <constraint firstItem="7CI-xs-zoW" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="50" id="lEp-QA-4CN"/>
+                            <constraint firstItem="7CI-xs-zoW" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="80" id="lEp-QA-4CN"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
