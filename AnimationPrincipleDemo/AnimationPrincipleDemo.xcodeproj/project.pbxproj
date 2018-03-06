@@ -10,6 +10,7 @@
 		431F41B1204CD297002E9946 /* OverlayAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431F41B0204CD297002E9946 /* OverlayAction.swift */; };
 		431F41B3204CD3AD002E9946 /* CloningAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431F41B2204CD3AD002E9946 /* CloningAction.swift */; };
 		431F41D3204E8E06002E9946 /* ParallaxAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431F41D2204E8E06002E9946 /* ParallaxAction.swift */; };
+		431F41D5204E981C002E9946 /* ObscurationAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431F41D4204E981C002E9946 /* ObscurationAction.swift */; };
 		438FDFDF203DA5C900F8D1EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438FDFDE203DA5C900F8D1EF /* AppDelegate.swift */; };
 		438FDFE1203DA5C900F8D1EF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438FDFE0203DA5C900F8D1EF /* ViewController.swift */; };
 		438FDFE6203DA5C900F8D1EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 438FDFE5203DA5C900F8D1EF /* Assets.xcassets */; };
@@ -30,6 +31,7 @@
 		431F41B0204CD297002E9946 /* OverlayAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayAction.swift; sourceTree = "<group>"; };
 		431F41B2204CD3AD002E9946 /* CloningAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloningAction.swift; sourceTree = "<group>"; };
 		431F41D2204E8E06002E9946 /* ParallaxAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParallaxAction.swift; sourceTree = "<group>"; };
+		431F41D4204E981C002E9946 /* ObscurationAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObscurationAction.swift; sourceTree = "<group>"; };
 		438FDFDB203DA5C900F8D1EF /* AnimationPrincipleDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimationPrincipleDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		438FDFDE203DA5C900F8D1EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		438FDFE0203DA5C900F8D1EF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 				431F41B0204CD297002E9946 /* OverlayAction.swift */,
 				431F41B2204CD3AD002E9946 /* CloningAction.swift */,
 				431F41D2204E8E06002E9946 /* ParallaxAction.swift */,
+				431F41D4204E981C002E9946 /* ObscurationAction.swift */,
 				438FDFFB203EBF7600F8D1EF /* Main.storyboard */,
 			);
 			path = Animations;
@@ -180,6 +183,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				431F41D5204E981C002E9946 /* ObscurationAction.swift in Sources */,
 				431F41D3204E8E06002E9946 /* ParallaxAction.swift in Sources */,
 				438FE003203FBAC900F8D1EF /* TransformationAction.swift in Sources */,
 				431F41B3204CD3AD002E9946 /* CloningAction.swift in Sources */,
