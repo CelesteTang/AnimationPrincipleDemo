@@ -80,6 +80,7 @@ class ActionFactory {
         case AnimationPrinciples.ObjectContinuity.valueChange: return ValueChangeAction(parent: viewController)
         case AnimationPrinciples.ObjectContinuity.masking: return MaskingAction(parent: viewController)
         case AnimationPrinciples.ObjectContinuity.overlay: return OverlayAction(parent: viewController)
+        case AnimationPrinciples.ObjectContinuity.cloning: return CloningAction(parent: viewController)
 
         default: return EasingAction(parent: viewController)
         }

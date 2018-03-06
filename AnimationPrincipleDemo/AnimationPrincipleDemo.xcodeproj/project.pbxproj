@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		431F41B1204CD297002E9946 /* OverlayAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431F41B0204CD297002E9946 /* OverlayAction.swift */; };
+		431F41B3204CD3AD002E9946 /* CloningAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431F41B2204CD3AD002E9946 /* CloningAction.swift */; };
 		438FDFDF203DA5C900F8D1EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438FDFDE203DA5C900F8D1EF /* AppDelegate.swift */; };
 		438FDFE1203DA5C900F8D1EF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438FDFE0203DA5C900F8D1EF /* ViewController.swift */; };
 		438FDFE6203DA5C900F8D1EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 438FDFE5203DA5C900F8D1EF /* Assets.xcassets */; };
@@ -26,6 +27,7 @@
 
 /* Begin PBXFileReference section */
 		431F41B0204CD297002E9946 /* OverlayAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayAction.swift; sourceTree = "<group>"; };
+		431F41B2204CD3AD002E9946 /* CloningAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloningAction.swift; sourceTree = "<group>"; };
 		438FDFDB203DA5C900F8D1EF /* AnimationPrincipleDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimationPrincipleDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		438FDFDE203DA5C900F8D1EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		438FDFE0203DA5C900F8D1EF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 				438FE004203FC01A00F8D1EF /* ValueChangeAction.swift */,
 				438FE00620403CDF00F8D1EF /* MaskingAction.swift */,
 				431F41B0204CD297002E9946 /* OverlayAction.swift */,
+				431F41B2204CD3AD002E9946 /* CloningAction.swift */,
 				438FDFFB203EBF7600F8D1EF /* Main.storyboard */,
 			);
 			path = Animations;
@@ -175,6 +178,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				438FE003203FBAC900F8D1EF /* TransformationAction.swift in Sources */,
+				431F41B3204CD3AD002E9946 /* CloningAction.swift in Sources */,
 				438FDFE1203DA5C900F8D1EF /* ViewController.swift in Sources */,
 				431F41B1204CD297002E9946 /* OverlayAction.swift in Sources */,
 				438FDFFF203EC1E800F8D1EF /* OffsetAndDelayAction.swift in Sources */,
