@@ -12,6 +12,7 @@
 		431F41D3204E8E06002E9946 /* ParallaxAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431F41D2204E8E06002E9946 /* ParallaxAction.swift */; };
 		431F41D5204E981C002E9946 /* ObscurationAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431F41D4204E981C002E9946 /* ObscurationAction.swift */; };
 		431F41D7204E9B57002E9946 /* DimensionalityAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431F41D6204E9B57002E9946 /* DimensionalityAction.swift */; };
+		431F41D9204F9A3D002E9946 /* DollyAndZoomAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431F41D8204F9A3D002E9946 /* DollyAndZoomAction.swift */; };
 		438FDFDF203DA5C900F8D1EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438FDFDE203DA5C900F8D1EF /* AppDelegate.swift */; };
 		438FDFE1203DA5C900F8D1EF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438FDFE0203DA5C900F8D1EF /* ViewController.swift */; };
 		438FDFE6203DA5C900F8D1EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 438FDFE5203DA5C900F8D1EF /* Assets.xcassets */; };
@@ -34,6 +35,7 @@
 		431F41D2204E8E06002E9946 /* ParallaxAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParallaxAction.swift; sourceTree = "<group>"; };
 		431F41D4204E981C002E9946 /* ObscurationAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObscurationAction.swift; sourceTree = "<group>"; };
 		431F41D6204E9B57002E9946 /* DimensionalityAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DimensionalityAction.swift; sourceTree = "<group>"; };
+		431F41D8204F9A3D002E9946 /* DollyAndZoomAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DollyAndZoomAction.swift; sourceTree = "<group>"; };
 		438FDFDB203DA5C900F8D1EF /* AnimationPrincipleDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimationPrincipleDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		438FDFDE203DA5C900F8D1EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		438FDFE0203DA5C900F8D1EF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 				431F41D2204E8E06002E9946 /* ParallaxAction.swift */,
 				431F41D4204E981C002E9946 /* ObscurationAction.swift */,
 				431F41D6204E9B57002E9946 /* DimensionalityAction.swift */,
+				431F41D8204F9A3D002E9946 /* DollyAndZoomAction.swift */,
 				438FDFFB203EBF7600F8D1EF /* Main.storyboard */,
 			);
 			path = Animations;
@@ -195,6 +198,7 @@
 				438FDFFF203EC1E800F8D1EF /* OffsetAndDelayAction.swift in Sources */,
 				438FDFF1203DAA9600F8D1EF /* AnimationPrinciples.swift in Sources */,
 				438FDFF3203DAE6300F8D1EF /* Animation.swift in Sources */,
+				431F41D9204F9A3D002E9946 /* DollyAndZoomAction.swift in Sources */,
 				438FDFFA203E62FF00F8D1EF /* Action.swift in Sources */,
 				438FDFDF203DA5C900F8D1EF /* AppDelegate.swift in Sources */,
 				438FE001203F193D00F8D1EF /* ParentingAction.swift in Sources */,

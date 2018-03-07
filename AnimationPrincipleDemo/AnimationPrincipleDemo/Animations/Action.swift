@@ -84,6 +84,7 @@ class ActionFactory {
         case AnimationPrinciples.TemporalHierarchy.parallax: return ParallaxAction(parent: viewController)
         case AnimationPrinciples.SpatialContinuity.obscuration: return ObscurationAction(parent: viewController)
         case AnimationPrinciples.SpatialContinuity.dimensionality: return DimensionalityAction(parent: viewController)
+        case AnimationPrinciples.SpatialContinuity.dollyAndZoom: return DollyAndZoomAction(parent: viewController)
 
         default: return EasingAction(parent: viewController)
         }

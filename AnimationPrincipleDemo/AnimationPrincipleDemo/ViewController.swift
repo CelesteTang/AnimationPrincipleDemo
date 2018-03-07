@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var animationName: UILabel!
     @IBOutlet weak var animationPickerView: UIPickerView!
     
-    var pickedAnimation: Animation = Animation(name: AnimationPrinciples.Timing.easing)
+    var pickedAnimation: Animation = Animation(name: AnimationPrinciples.SpatialContinuity.dollyAndZoom)
     
     override func viewDidLoad() {
         super.viewDidLoad()
