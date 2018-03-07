@@ -83,6 +83,7 @@ class ActionFactory {
         case AnimationPrinciples.ObjectContinuity.cloning: return CloningAction(parent: viewController)
         case AnimationPrinciples.TemporalHierarchy.parallax: return ParallaxAction(parent: viewController)
         case AnimationPrinciples.SpatialContinuity.obscuration: return ObscurationAction(parent: viewController)
+        case AnimationPrinciples.SpatialContinuity.dimensionality: return DimensionalityAction(parent: viewController)
 
         default: return EasingAction(parent: viewController)
         }
