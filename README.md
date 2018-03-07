@@ -19,3 +19,21 @@ The idea of this project came from [Issara Willenskomer](https://medium.com/ux-i
 
 ### Masking
 <img src="https://github.com/CelesteTang/AnimationPrincipleDemo/blob/master/ScreenRecording/Masking.gif" width="163" height="320" />
+
+### Overlay
+<img src="https://github.com/CelesteTang/AnimationPrincipleDemo/blob/master/ScreenRecording/Overlay.gif" width="163" height="320" />
+
+### Cloning
+<img src="https://github.com/CelesteTang/AnimationPrincipleDemo/blob/master/ScreenRecording/Cloning.gif" width="163" height="320" />
+
+### Parallax
+<img src="https://github.com/CelesteTang/AnimationPrincipleDemo/blob/master/ScreenRecording/Parallax.gif" width="163" height="320" />
+
+### Obscuration
+<img src="https://github.com/CelesteTang/AnimationPrincipleDemo/blob/master/ScreenRecording/Obscuration.gif" width="163" height="320" />
+
+### Dimensionality
+<img src="https://github.com/CelesteTang/AnimationPrincipleDemo/blob/master/ScreenRecording/Dimensionality.gif" width="163" height="320" />
+
+### DollyAndZoom
+<img src="https://github.com/CelesteTang/AnimationPrincipleDemo/blob/master/ScreenRecording/DollyAndZoom.gif" width="163" height="320" />
